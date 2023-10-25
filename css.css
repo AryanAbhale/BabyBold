@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'gilroy' ;
+
+
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width:100%;
+    height:100vh;
+   
+}
+#back{
+    width:100%;
+    height:100vh;
+  
+}
+#back img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+
+}
+#top{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100vh;
+  
+}
+#working{
+    margin: 0 auto;
+    position: relative;
+    width:80%;
+    height: 100vh;
+     max-width: 1920px;  /*it means that if the area 
+                        can only be till 1920px */
+  
+  
+}
+#nav
+{
+    display:flex;
+    align-items: center;
+   justify-content: space-between;
+    width: 100%;
+    padding:  10px 0;
+}
+#nav img{
+    height: 40px;
+}
+#nleft,#nright{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+}
+
+
+#nav a{
+    pointer-events: all;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing:1px ;
+    font-size: 12px;
+    color: #fff;
+    font-family: "gilroy";
+
+}
+#hero{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0,-50%);
+    justify-content: space-between;
+    width: 100%;
+  
+    
+}
+#heroleft{
+    /* padding-top: 13vh; */
+    min-width: 50%;
+ 
+}
+#heroright{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 20%;
+    color: #fff;
+    
+    
+}
+#heroright p{
+    font-size: 14px;
+    font-weight: 300;
+    text-align: right;
+}
+
+#heroright #imgdiv{
+    width: 100%;
+    margin-top:5px ;
+    margin-bottom: 20px;
+    height: 170px;
+    background-image: url('istockphoto-1083372674-1024x1024.jpg');
+   background-size: cover;
+   background-position: center;
+
+}
+#heroleft .elem{
+    height: 9vw;
+   position: relative;
+    overflow: hidden;   
+}
+#heroleft .elem h1:nth-child(1){
+    top:0;
+}
+#heroleft .elem h1{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    line-height: 0.9;
+    font-family: 'Kajiro'; /* Use 'Kajiro' as the font-family */
+    color: rgb(255, 255, 255);
+   font-weight: 100;
+   font-size: 11vw;
+}
+ #heroleft button{
+    pointer-events: all;
+    padding:.8vw  .8vw;
+    font-size: 2vw;
+    margin: 2vw;
+    font-family: 'Kajiro';
+} 
